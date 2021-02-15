@@ -2,7 +2,32 @@
 
 This is the backend repo of memo application.
 
-## Development language & dependencies
+## API Documentation
+
+**URL** de l'api :
+
+```
+https://memo-back.vercel.app/api
+```
+
+Method to call : **POST**
+
+Json body expected (example below) :
+
+```js
+{
+  username: "username",   // String
+  score: 12               // Number
+}
+```
+
+API respond with HTTP code status and Json body :
+- **message** : to display error or success message in UI.
+- **bestPlayers** : player objects array.
+
+## Backend Informations
+
+### Development language & dependencies
 
 - Nodejs
 - Javascript
@@ -11,7 +36,7 @@ This is the backend repo of memo application.
 - Mongoose
 - Jest
 
-## Commands
+### Commands
 
 ```shell
 npm install
@@ -24,6 +49,6 @@ If you want test your code :
 npm test
 ```
 
-## Guide
+### Guide
 
 You should test all utils methods.
